@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vkit-chat-bot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/68511ffdf8.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200;1,300;1,400&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <!-- -----------------------------------Loader------------------------------- -->
+
+    <div class="loader_bg" id="loader_bg">
+        <div class="loader">
+        </div>
+    </div>
+
+    <!-- ---------------------------------------Header Section--------------------------------------- -->
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a class="active" href="department.html">DEPARTMENT</a></li>
+                    <li><a class="active" href="faculty.html">FACULTY</a></li>
+                    <li><a class="active" href="facilities.html">FACILITIES</a></li>
+                    <li><a href="#contact">CHAT-BOT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="text-box">
+            <h1>
+                Vkit <span>Chat </span>Bot
+            </h1>
+            <p>
+                Hey I am ChatBot, a computer program <br><span>designed to simulate conversation with human users.</span>
+            </p>
+            <a href="https://vitb.ac.in/" class="hero-btn">Visit us to know more</a>
+        </div>
+
+    </section>
+
+
+    <!-- --------------------------------Chatbot Section------------------------------- -->
+
+
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <!-- <img src="https://img.icons8.com/color/48/000000/circled-user-male-skin-type-5--v1.png" alt="image"> -->
+                        <img src="img/icon8.png" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Chat support</h4>
+                        <p class="chatbox__description--header">Hii. My name is Bot. How can I help you?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="./img/chatbox-icon.svg" /></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+    <!-- ------------------------contact us Section---------------------- -->
+
+
+    <section class="contact-p" id="contact">
+        <h1>Main ChatBot</h1>
+        <p>This is the section where you can take a look of a larger chatbot.</p>
+        <div class="contact">
+            <h1>Enroll For Our Various facilitys <br>Anywhere From The World</h1>
+            <a href="chatbot.html" class="hero-btn">Launch Your Chat-Bot</a>
+        </div>
+    </section>
+
+
+    <!-- ---------------------------Footer Section------------------------ -->
+
+
+    <section class="footer">
+        <h3>About Us </h3>
+        <p>Hey I am ChatBot, a computer program designed to simulate conversation with human users, especially over the internet. <br>I can give u any information you want to know</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>VKIT © 2024 Copyright: CB <a href="https://www.google.com/">Chandan || Akshay || Mohan || Likith</a></p>
+    </section>
+
+
+    <!-- --------------------------End of Front Page---------------------- -->
+
+
+    <script>
+        function progress() {
+            var percent = document.querySelector('.percent');
+            var progress = document.querySelector('.progress');
+            var text = document.querySelector('.text');
+            var count = 4;
+            var per = 16;
+            var loading = setInterval(animate, 50);
+
+            function animate() {
+                if (count == 100 && per == 400) {
+                    percent.classList.add("text-blink");
+                    text.style.display = "block";
+                    clearInterval(loading);
+                } else {
+                    per = per + 4;
+                    count = count + 1;
+                    progress.style.width = per + 'px';
+                    percent.textContent = count + '%';
+                }
+            }
+        }
+        progress();
+    </script>
+
+
+    <!-- --------------------Loader------------------------ -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function() {
+            $('.loader_bg').fadeToggle();
+
+        }, 2000);
+    </script>
+
+
+    <!-- --------------------End Loader------------------------ -->
+
+
+    <!-- ---------------javascript for toogle menu------------- -->
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header.nav");
+            header.classList.toggle("sticky", window.scrolly > 0);
+        })
+    </script>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

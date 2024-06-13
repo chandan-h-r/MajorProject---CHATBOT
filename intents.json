@@ -1,0 +1,415 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    
+    {
+      "tag": "college",
+      "patterns": [
+        "What is the college name?",
+        "college name"
+      ],
+      "responses": [
+        "The college name is Vivekanand institute of Technology",
+        "Vivekanand institute of Technology"
+      ]
+    },
+
+    {
+      "tag": "address",
+      "patterns": [
+        "Where is the college located?",
+        "college location",
+        "college address"
+      ],
+      "responses": [
+        "VKIT is located in Nalakamba, Kumbalagodu, Bengaluru, Karnataka-560074"
+      ]
+    },
+    
+    {
+      "tag": "cet_code",
+      "patterns": [
+        "what is the college cet code",
+        "cet code",
+        "cet number",
+        "what is the college comedk code",
+        "comedk code",
+        "comedk number"
+      ],
+      "responses": [
+        "CET Code: 188 and COMEDK Code: E148"
+      ]
+    },
+    
+    {
+      "tag": "your_name",
+      "patterns": [
+        "What is your Name?",
+        "What is ur Name?",
+        "What is the name?"
+      ],
+      "responses": [
+        "My Name is Sam",
+        "My name is Bot"
+      ]
+    },
+    
+    {
+      "tag": "faculty",
+      "patterns": [
+        "How many faculties are there in the college?",
+        "total teachers?",
+        "Total faculty?",
+        "Teachers?"
+      ],
+      "responses": [
+        "There are 30 plus faculty in the college",
+        "There are approx 30 plus faculty"
+      ]
+    },
+    
+    {
+        "tag": "principal",
+        "patterns": [
+        "Name of the principal?",
+        "Principal name?"
+        ],
+        "responses": [
+        "Dr. K M Ravikumar"
+        ]
+    }, 
+    
+    {
+        "tag": "vice_principal",
+        "patterns": [
+        "Name of vice principal?",
+        "vice-principal name?"
+        ],
+        "responses": [
+        "Dr. D.V. Chandrashekar"
+        ]
+    },
+    
+    {
+      "tag": "cse_hod",
+      "patterns": [
+        "cse hod name is?",
+        "cse hod name?"
+      ],
+      "responses": [
+        "Dr. Vidya A"
+      ]
+    },    
+    
+    {
+      "tag": "ise_hod",
+      "patterns": [
+        "ise hod name?",
+        "ise hod?"
+      ],
+      "responses": [
+        "Dr. Vanajakshi P"
+      ]
+    },
+    
+    {
+        "tag": "e&c_hod",
+        "patterns": [
+            "e&c hod name is?",
+            " e&c hod name?"
+    ],
+      "responses": [
+        "Dr. Bhagyalakshmi N"
+     ]
+    }, 
+            
+                {
+                  "tag": "civil_hod",
+                  "patterns": [
+                    "civil hod name is?",
+                    "civil hod name?"
+                  ],
+                  "responses": [
+                    "Prof. Harish T S"
+                  ]
+                }, 
+                
+                    {
+                      "tag": "ai&ml_hod",
+                      "patterns": [
+                        "ai&ml hod name is?",
+                        "ai&ml hod name?"
+                      ],
+                      "responses": [
+                        "Dr. Shaila"
+                      ]
+                    }, 
+                    
+                        {
+                          "tag": "me_hod",
+                          "patterns": [
+                            "mech hod name is?",
+                            "mech hod name?",
+                            "me hod name?"
+                          ],
+                          "responses": [
+                            "Dr. Manjunatha "
+                          ]
+                        }, 
+    
+    {
+      "tag": "total_students",
+      "patterns": [
+        "How many students are studing in the college?",
+        "total students?",
+        "Total undergraduate?",
+        "students?"
+      ],
+      "responses": [
+        "There are 500 plus students in the college",
+        "There are approx 500 plus Undergraduate"
+      ]
+    },
+    
+    {
+      "tag": "branch",
+      "patterns": [
+        "How many departments are there?",
+        "How many branch are there?",
+        "How many streams?",
+        "streams?",
+        "department?"
+      ],
+      "responses": [
+        "There are six B.E Engineering Degrees",
+        "CSE, ISE, AI&ML, E&C, CIVIL and ME total six are there YOU can chose anyone"
+      ]
+    },
+    {
+      "tag": "cse_sem_notes",
+      "patterns": [
+          "cse notes",
+          "computer science notes",
+          "cse sem engineering notes"
+          ],
+      "responses": [
+        "https://www.vtupulse.com/vtu-notes/computer-science-and-engineering-notes/"
+      ]
+    },
+    {
+      "tag": "ece_sem_notes",
+      "patterns": [
+          "ece notes",
+          "electronics communication notes",
+          "ece sem engineering notes"
+          ],
+      "responses": [
+        "https://www.vtupulse.com/cbcs-ece-notes/2018-scheme-electronics-and-communication-vtu-cbcs-notes/"
+      ]
+    },
+    
+    {
+      "tag": "ai&ml_sem_notes",
+      "patterns": [
+          "ai&ml notes",
+          "ai&ml notes",
+          "ai&ml sem engineering notes"
+          ],
+      "responses": [
+        "https://www.vtupulse.com/cbcs-cse-notes/18cs71-artificial-intelligence-and-machine-learning/"
+      ]
+    },
+    
+    {
+      "tag": "ise_sem_notes",
+      "patterns": [
+          "ise notes",
+          "ise notes",
+          "ise sem engineering notes"
+          ],
+      "responses": [
+        "https://www.vtuloop.com/2018-scheme-ise-vtu-notes/"
+      ]
+    }, 
+
+    {
+      "tag": "civil_sem_notes",
+      "patterns": [
+          "civil notes",
+          "civil notes",
+          "civil sem engineering notes"
+          ],
+      "responses": [
+        "https://www.vtupulse.com/vtu-notes/civil-engineering/"
+      ]
+    },
+    
+    {
+      "tag": "me_sem_notes",
+      "patterns": [
+          "mech notes",
+          "me notes",
+          "mech sem engineering notes"
+          ],
+      "responses": [
+        "https://www.vtupulse.com/cbcs-me-notes/2018-scheme-mechanical-engineering-vtu-cbcs-notes/"
+      ]
+    },
+
+    {
+      "tag": "college_cet_cut_off",
+      "patterns": [
+          "cet cutoff",
+          "cet ranking"
+          ],
+      "responses": [
+        "The overall cutoff for KCET is 36937 - 167674 rank."
+      ]
+    },
+    
+    {
+      "tag": "college_fees",
+      "patterns": [
+          "what is the college fees",
+          "college fees"
+          ],
+      "responses": [
+        "Average Fees 1,50,000 per year"
+      ]
+    },    
+
+    {
+      "tag": "student_placement",
+      "patterns": [
+          "student placements in the college",
+          "higest package in the college"
+          ],
+      "responses": [
+        "We provide 80% of placement guarantee and the higest placement package of 10LPA"
+      ]
+    },    
+
+
+    {
+      "tag": "hostel_fees",
+      "patterns": [
+          "hostel fees",
+          "hostel fees to be paid"
+          ],
+      "responses": [
+        "For single sharing the fee is 65k per year and for two sharing the fee is 70k per year"
+      ]
+    }, 
+
+    {
+      "tag": "result",
+      "patterns": [
+          "vtu result",
+          "exam result"
+          ],
+      "responses": [
+        "https://results.vtu.ac.in/"
+      ]
+    },
+
+    {
+      "tag": "college_comedk_cut_off",
+      "patterns": [
+          "comedk cutoff",
+          "comedk ranking"
+          ],
+      "responses": [
+        "The overall cutoff for COMEDK-UGET is 31602 - 56620 rank."
+      ]
+    },
+    
+    {
+      "tag": "sem_exams",
+      "patterns": [
+          "8th sem exams?",
+          "exams?"
+          ],
+      "responses": [
+        "The 8th sem exam is held on 16/5/24 and 20/5/24"
+      ]
+    },
+
+    {
+      "tag": "events",
+      "patterns": [
+          "upcoming events",
+          "events"
+          ],
+      "responses": [
+        "An event like fest is held on 3-5-24"
+      ]
+    },
+
+    {
+      "tag": "total_seats",
+      "patterns": [
+          "total admission seats",
+          "total cet seats available",
+          "total comedk seats available",
+          "total management seats available"
+          ],
+      "responses": [
+        "CET - 50 percent of all seats (only for Karnataka students) COMEDK - 25 percent of total seats Management quota - 25 percent"
+      ]
+    },
+
+    {
+      "tag": "admission_criteria",
+      "patterns": [
+          "how much marks do i need to get admission criteria",
+          "how much marks to get admission",
+          "criteria"
+          ],
+      "responses": [
+        "The candidate shall have secured a minimum of 45% marks in aggregate (40% marks in case of SC/ST candidates) in three subjects of Physics, Mathematics and any one of the following subjects namely, Chemistry, Biology, Bio-technology, Computer Science, Electronics and shall have completed PUC, 10 + 2, or its equivalent with English as one of the languages."
+      ]
+    },
+        
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}
